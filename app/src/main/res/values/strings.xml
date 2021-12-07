@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">TravelGuru</string>
+    <string name="empty_description">Empty</string>
+    <string name="email_id">Email id</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="signup">Signup</string>
+    <string name="submit">Submit</string>
+    <string name="text_code_sent_alert">A reset code has been sent to your email id : %1$s. Please enter the code below.</string>
+    <string name="new_password">New password</string>
+    <string name="confirm">Confirm</string>
+    <string name="text_signup_or"><u>Not registered yet? Create new account</u></string>
+    <string name="text_login"><u>Already a member? Login</u></string>
+    <string name="text_back_to_login"><u>Back to login</u></string>
+    <string name="text_forgot_password"><u>Forgot password? Click here to reset.</u></string>
+    <string name="text_resend_code">Didn\'t get the code? Resend code.</string>
+</resources>

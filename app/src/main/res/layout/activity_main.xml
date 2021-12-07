@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/home_city_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/home_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="10dp"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/home_city_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/autour_one"
+                android:text="delhi"
+                android:layout_marginTop="25dp"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/home_city_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:justificationMode="inter_word"
+                android:text="A random Description about city"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:fontFamily="casual"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/hotels"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    app:cardCornerRadius="30dp"
+                    android:layout_marginEnd="10dp"
+                    android:elevation="12dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Hotel"
+                        android:drawablePadding="25dp"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:layout_marginStart="20dp"
+                        app:drawableStartCompat="@drawable/ic_hotel_9212" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/restaurants"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    app:cardCornerRadius="30dp"
+                    android:layout_marginStart="10dp"
+                    android:elevation="12dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Restaurant"
+                        android:drawablePadding="10dp"
+                        android:layout_marginStart="20dp"
+                        android:drawableStart="@drawable/ic_restaurant_5841"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:gravity="center"/>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/hospital"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    app:cardCornerRadius="30dp"
+                    android:layout_marginEnd="10dp"
+                    android:elevation="12dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Hospital"
+                        android:layout_marginStart="20dp"
+                        android:drawablePadding="17dp"
+                        android:drawableStart="@drawable/ic_hospital_svgrepo_com"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:gravity="center"/>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/places"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    app:cardCornerRadius="30dp"
+                    android:layout_marginStart="10dp"
+                    android:elevation="12dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Places"
+                        android:layout_marginStart="20dp"
+                        android:drawablePadding="22dp"
+                        android:drawableStart="@drawable/ic_location_1_1s_200px"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:gravity="center"/>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/school"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="85dp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginStart="75dp"
+                android:elevation="12dp"
+                android:layout_weight="0.5">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="School/College"
+                    android:layout_marginStart="20dp"
+                    android:drawablePadding="20dp"
+                    android:drawableStart="@drawable/ic_graduation_svgrepo_com"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:gravity="center"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
