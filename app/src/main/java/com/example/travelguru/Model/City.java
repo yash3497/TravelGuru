@@ -1,15 +1,36 @@
 package com.example.travelguru.Model;
 
-public class City {
-    String name,image,description;
+import java.util.ArrayList;
 
-    public City(String name, String image, String description) {
+public class City {
+    String name,image,description,map,url;
+
+
+    public City(String name, String image, String description, String map, String url) {
         this.name = name;
         this.image = image;
         this.description = description;
+        this.map = map;
+        this.url = url;
     }
 
     public City() {
+    }
+
+    public String getMap() {
+        return map;
+    }
+
+    public void setMap(String map) {
+        this.map = map;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 
     public String getName() {

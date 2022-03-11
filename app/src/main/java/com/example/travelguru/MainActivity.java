@@ -2,6 +2,7 @@ package com.example.travelguru;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.bumptech.glide.Glide;
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     float v=0;
     //
     FirebaseFirestore database;
+    String city="";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,10 +33,27 @@ public class MainActivity extends AppCompatActivity {
         binding.homeScroll.setAlpha(v);
         binding.homeScroll.animate().translationX(0).alpha(1).setDuration(1000).setStartDelay(900).start();
 
+
         //
         database = FirebaseFirestore.getInstance();
 
         getdata(name);
+
+        binding.hotels.setOnClickListener(view -> {
+            nextScreen(name+"Hotels");
+        });
+        binding.restaurants.setOnClickListener(view -> {
+            nextScreen(name+"Restaurant");
+        });
+        binding.hospital.setOnClickListener(view -> {
+            nextScreen(name+"Hospital");
+        });
+        binding.places.setOnClickListener(view -> {
+            nextScreen(name+"Places");
+        });
+        binding.school.setOnClickListener(view -> {
+            nextScreen(name+"School");
+        });
     }
     private void getdata(String name){
         database.collection("city")
@@ -46,10 +65,16 @@ public class MainActivity extends AppCompatActivity {
                        List<DocumentSnapshot> snapshots = queryDocumentSnapshots.getDocuments();
                        for(DocumentSnapshot document : snapshots){
                            binding.homeCityName.setText(document.getString("name"));
+                           city = document.getString("name");
                            binding.homeCityDes.setText(document.getString("desc"));
                            Glide.with(getApplicationContext()).load(document.getString("image")).into(binding.homeCityImg);
                        }
                     }
                 });
+    }
+    private void nextScreen(String data){
+        Intent intent = new Intent(getApplicationContext(),HotelsList.class);
+        intent.putExtra("key",data);
+        startActivity(intent);
     }
 }

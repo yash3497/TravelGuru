@@ -65,6 +65,7 @@ public class LoginActivity extends AppCompatActivity {
                                 map.put("email",binding.inputEmailLogin.getText().toString());
                                 map.put("password",binding.inputPassLogin.getText().toString());
 
+                                assert user != null;
                                 database.collection("user")
                                         .document(user.getUid())
                                         .set(map, SetOptions.merge());
@@ -80,13 +81,13 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
+//    @Override
+//    protected void onStart() {
+//        super.onStart();
 //        if(auth != null){
-//            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+//            Intent intent = new Intent(getApplicationContext(), CityList.class);
 //            startActivity(intent);
 //            finishAffinity();
 //        }
-    }
+//    }
 }

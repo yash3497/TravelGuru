@@ -6,11 +6,17 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/airplane1"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/airplane1"
         android:supportsRtl="true"
         android:theme="@style/Theme.TravelGuru">
+        <activity
+            android:name=".DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HotelsList"
+            android:exported="false" />
         <activity
             android:name=".CityList"
             android:exported="false" />

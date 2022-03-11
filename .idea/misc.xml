@@ -5,17 +5,24 @@
       <map>
         <entry key="..\:/Users/Jarvis/AndroidStudioProjects/TravelGuru2/app/src/main/res/drawable/bg_edittext.xml" value="0.22291666666666668" />
         <entry key="..\:/Users/Jarvis/AndroidStudioProjects/TravelGuru2/app/src/main/res/drawable/bg_line.xml" value="0.22291666666666668" />
+        <entry key="..\:/Users/Jarvis/AndroidStudioProjects/TravelGuru2/app/src/main/res/drawable/ic_baseline_exit_to_app_24.xml" value="0.22291666666666668" />
+        <entry key="..\:/Users/Jarvis/AndroidStudioProjects/TravelGuru2/app/src/main/res/drawable/ic_baseline_location_on_24.xml" value="0.22291666666666668" />
         <entry key="..\:/Users/Jarvis/AndroidStudioProjects/TravelGuru2/app/src/main/res/drawable/ic_check_circle_white_custom.xml" value="0.22291666666666668" />
         <entry key="..\:/Users/Jarvis/AndroidStudioProjects/TravelGuru2/app/src/main/res/drawable/ic_eye_off.xml" value="0.22291666666666668" />
         <entry key="..\:/Users/Jarvis/AndroidStudioProjects/TravelGuru2/app/src/main/res/drawable/ic_eye_on.xml" value="0.22291666666666668" />
         <entry key="..\:/Users/Jarvis/AndroidStudioProjects/TravelGuru2/app/src/main/res/drawable/ic_hotel_9212.xml" value="0.22291666666666668" />
+        <entry key="..\:/Users/Jarvis/AndroidStudioProjects/TravelGuru2/app/src/main/res/drawable/ic_travelguru.xml" value="0.22291666666666668" />
+        <entry key="..\:/Users/Jarvis/AndroidStudioProjects/TravelGuru2/app/src/main/res/drawable/ic_travelguru__logo_.xml" value="0.22291666666666668" />
         <entry key="..\:/Users/Jarvis/AndroidStudioProjects/TravelGuru2/app/src/main/res/drawable/icon_selector.xml" value="0.22291666666666668" />
         <entry key="..\:/Users/Jarvis/AndroidStudioProjects/TravelGuru2/app/src/main/res/layout/activity_city_list.xml" value="0.33" />
+        <entry key="..\:/Users/Jarvis/AndroidStudioProjects/TravelGuru2/app/src/main/res/layout/activity_detail.xml" value="0.5" />
+        <entry key="..\:/Users/Jarvis/AndroidStudioProjects/TravelGuru2/app/src/main/res/layout/activity_hotels_list.xml" value="0.20677083333333332" />
         <entry key="..\:/Users/Jarvis/AndroidStudioProjects/TravelGuru2/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Users/Jarvis/AndroidStudioProjects/TravelGuru2/app/src/main/res/layout/activity_main.xml" value="0.41354166666666664" />
         <entry key="..\:/Users/Jarvis/AndroidStudioProjects/TravelGuru2/app/src/main/res/layout/activity_signup.xml" value="0.25" />
         <entry key="..\:/Users/Jarvis/AndroidStudioProjects/TravelGuru2/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
-        <entry key="..\:/Users/Jarvis/AndroidStudioProjects/TravelGuru2/app/src/main/res/layout/city_card.xml" value="0.25" />
+        <entry key="..\:/Users/Jarvis/AndroidStudioProjects/TravelGuru2/app/src/main/res/layout/city_card.xml" value="0.33" />
+        <entry key="..\:/Users/Jarvis/AndroidStudioProjects/TravelGuru2/app/src/main/res/menu/citymenu.xml" value="0.33" />
       </map>
     </option>
   </component>
